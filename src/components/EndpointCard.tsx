@@ -66,6 +66,18 @@ export function EndpointCard({ endpoint }: { endpoint: ApiEndpoint }) {
     }
   }
 
+  function handleToggle() {
+    if (open) {
+      setResult({
+        status: "idle",
+      });
+
+      setCopied(false);
+    }
+
+    setOpen((prev) => !prev);
+  }
+
   return (
     <div
       className={`nb-border nb-shadow min-w-0 bg-card transition-colors duration-200 ${
@@ -75,7 +87,7 @@ export function EndpointCard({ endpoint }: { endpoint: ApiEndpoint }) {
       {/* Header */}
       <button
         type="button"
-        onClick={() => setOpen((v) => !v)}
+        onClick={handleToggle}
         className="flex w-full cursor-pointer items-center gap-3 px-4 py-4 text-left sm:px-5"
       >
         <MethodBadge method={endpoint.method} />
