@@ -39,7 +39,7 @@ export function Header() {
           <img
             src={icon}
             alt="ArcGateway Logo"
-            className="h-12 w-12 shrink-0 drop-shadow-[0_0_12px_rgba(125,211,252,0.9)] sm:h-16 sm:w-16"
+            className="h-12 w-12 shrink-0 drop-shadow-[0_0_12px_var(--ice-blue)] sm:h-16 sm:w-16"
           />
 
           <h1 className="font-display text-4xl font-extrabold uppercase tracking-tight sm:text-6xl">
@@ -72,8 +72,8 @@ export function Header() {
             </span>{" "}
             Setiap endpoint API memiliki batas maksimal 40 request/menit.
             Pembatasan ini diterapkan untuk meminimalisir spam dan
-            penyalahgunaan layanan. Gunakan endpoint dengan bijak dan tidak spam agar akses
-            tetap tersedia untuk semua pengguna.
+            penyalahgunaan layanan. Gunakan endpoint dengan bijak dan tidak
+            spam agar akses tetap tersedia untuk semua pengguna.
           </p>
         </div>
       </div>

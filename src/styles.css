@@ -26,6 +26,7 @@
   --color-method: var(--method);
   --color-danger: var(--danger);
   --color-success: var(--success);
+  --color-ice-blue: var(--ice-blue);
 
   --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
@@ -59,6 +60,7 @@
   --danger: oklch(0.68 0.2 25);
   --success: oklch(0.78 0.16 155);
 
+  /* Dark scrollbar + icon glow */
   --ice-blue: oklch(0.82 0.12 220);
 }
 
@@ -87,6 +89,9 @@
   --method: oklch(0.7 0.19 45);
   --danger: oklch(0.58 0.22 25);
   --success: oklch(0.6 0.16 155);
+
+  /* Light scrollbar + icon glow */
+  --ice-blue: oklch(0.7 0.19 45);
 }
 
 /* ========================================================= */
@@ -192,7 +197,6 @@
   }
 
   /* Firefox Scrollbar */
-
   ::-webkit-scrollbar {
     width: 8px;
     height: 8px;
