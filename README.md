@@ -138,5 +138,5 @@ https://arcgateway-api.byproject.web.id
 ---
 
 <p align="center">
-Made with 🩷 using React, Vite, and Tailwind CSS.
+Made with ❤️ using React, Vite, and Tailwind CSS.
 </p>
