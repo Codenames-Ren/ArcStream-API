@@ -1,75 +1,142 @@
-# React + TypeScript + Vite
+# Arc Stream API
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <img src="./public/icon.png" width="120" alt="Arc Stream API Logo">
+</p>
 
-Currently, two official plugins are available:
+<p align="center">
+  Playground API interaktif untuk menguji seluruh endpoint ArcGateway.
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+<p align="center">
+  <img src="https://img.shields.io/badge/React-19-61DAFB?logo=react">
+  <img src="https://img.shields.io/badge/Vite-8-646CFF?logo=vite">
+  <img src="https://img.shields.io/badge/TailwindCSS-4-38BDF8?logo=tailwindcss">
+  <img src="https://img.shields.io/badge/TypeScript-6-3178C6?logo=typescript">
+</p>
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tentang Proyek
 
-## Expanding the ESLint configuration
+**Arc Stream API** merupakan aplikasi web berbasis React + Vite yang berfungsi sebagai playground interaktif untuk menguji seluruh endpoint API yang tersedia.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Melalui aplikasi ini, pengguna dapat mengirim request API secara langsung dari browser, melihat response JSON secara real-time, menyalin hasil response, serta melakukan pengujian endpoint tanpa memerlukan aplikasi pihak ketiga seperti Postman atau Insomnia.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Fitur
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- Playground API interaktif
+- Pengujian endpoint secara langsung
+- Preview URL request
+- Tampilan response JSON
+- Copy response ke clipboard
+- Dark Mode & Light Mode
+- Responsive Design
+- Konfigurasi melalui Environment Variable
 
+---
+
+## Teknologi
+
+| Teknologi | Kegunaan |
+|-----------|----------|
+| React 19 | Frontend Framework |
+| Vite | Build Tool |
+| TypeScript | Type Safety |
+| Tailwind CSS v4 | Styling |
+| React Icons | Icon Library |
+
+---
+
+## Struktur Proyek
+
+```text
+src/
+├── components/
+├── config/
+├── data/
+├── hooks/
+├── services/
+├── styles.css
+├── App.tsx
+└── main.tsx
+
+public/
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Environment Variable
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Buat file `.env` pada root project.
 
+```env
+VITE_APP_NAME=ArcGateway
+VITE_APP_VERSION=v1
+VITE_API_BASE_URL=https://your-api-domain.com
+VITE_GITHUB_URL=https://github.com/Codenames-Ren
 ```
+
+---
+
+## Instalasi
+
+Clone repository.
+
+```bash
+git clone https://github.com/Codenames-Ren/ArcStream-API.git
+```
+
+Masuk ke folder project.
+
+```bash
+cd ArcStream-API
+```
+
+Install seluruh dependency.
+
+```bash
+npm install
+```
+
+Jalankan development server.
+
+```bash
+npm run dev
+```
+
+Buka browser.
+
+```text
+http://localhost:5173
+```
+
+---
+
+## Build Production
+
+Membuat hasil build production.
+
+```bash
+npm run build
+```
+
+Menjalankan hasil build secara lokal.
+
+```bash
+npm run preview
+```
+
+---
+
+## Website
+
+https://arcgateway-api.byproject.web.id
+
+---
+
+<p align="center">
+Made with 🩷 using React, Vite, and Tailwind CSS.
+</p>
