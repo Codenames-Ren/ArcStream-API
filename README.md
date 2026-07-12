@@ -1,7 +1,7 @@
 # Arc Stream API
 
 <p align="center">
-  <img src="/public/icon.png" width="120" alt="Arc Stream API Logo">
+  <img src="./src/assets/icon.png" width="120" alt="Arc Stream API Logo">
 </p>
 
 <p align="center">
