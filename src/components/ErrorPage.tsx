@@ -14,7 +14,7 @@ export function ErrorPage({
     children,
 }: ErrorPageProps) {
     return (
-        <main className="flex min-h-screen items-center justify-center bg-background px-6">
+        <main className="flex h-screen items-center justify-center overflow-hidden bg-background px-6">
             <div className="flex w-full max-w-3xl flex-col items-center text-center">
                 <h1 className="font-display text-7xl font-extrabold text-primary sm:text-8xl">
                     {code}
